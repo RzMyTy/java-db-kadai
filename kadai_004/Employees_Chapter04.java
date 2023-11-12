@@ -44,7 +44,7 @@ public class Employees_Chapter04 {
 				try { statement.close(); } catch(SQLException ignore) {}
 			}
 			if( con != null ) {
-				try { statement.close(); } catch(SQLException ignore) {}
+				try { con.close(); } catch(SQLException ignore) {}
 			}
 		}
 	}
